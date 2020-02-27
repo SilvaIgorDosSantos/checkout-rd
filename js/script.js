@@ -33,7 +33,7 @@ function buscarCep(cep){
     let config = {
         method:"get"
     }
-    fetch(`http://viacep.com.br/ws/${cep}/json/`, config)
+    fetch(`https://viacep.com.br/ws/${cep}/json/`, config)
     .then(response => response.json())
     .then(dados =>{
         if(dados.erro){ 
